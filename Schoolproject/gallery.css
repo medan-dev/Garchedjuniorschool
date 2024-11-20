@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playball&display=swap');
+
+*{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Header Styling */
+header {
+    background-color: rgba(9, 20, 45, 0.9);
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.logo h1 {
+    font-family: "Lobster", sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: -10px;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    background-color: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d75430;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.gallery1{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba(225, 222, 222, 0.513);
+}
+
+.gallery1 h2{
+    font-family: "Lobster", sans-serif;
+    font-size: 30px;
+    padding: 15px;
+    color: #63E6BE;
+}
+
+.pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.pics img{
+    width: 30%;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 3px 4px 6px #333;
+}
+
+footer{
+    background-color: rgba(9, 20, 45, 2.4);
+    justify-content: center;
+    text-align: center;
+    display: block;
+    font-weight: 50;
+    font-size: 10px;
+    margin-bottom: 0;
+}
+
+.links{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer a{
+    font-weight: 800;
+    font-size: large;
+}
+
+footer h4{
+    color: orange;
+    font-weight: 800;
+    font-size: large;
+}
+
+hr{
+    margin-left: 100px;
+    margin-right: 100px;
+    font-weight: 900;
+    color: blue;
+}
+
+footer h2{
+    font-family: "Playball", cursive;
+    font-weight: 1000;
+   font-size: 40px;
+   font-style: normal;
+    color: yellow;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+    .services-slider,
+    .testimonial-slider {
+        flex-direction: column;
+    }
+
+    .service,
+    .testimonial {
+        width: 80%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+    }
+
+    #services h2,
+    #testimonials h2,
+    #cta h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 768px) {
+    .services-slider,
+    .testimonial-slider {
+        flex-direction: column;
+    }
+
+    .service,
+    .testimonial {
+        width: 100%;
+    }
+
+    nav ul li a {
+        font-size: large;
+    }
+
+    #hero h1 {
+        font-size: 1.75rem;
+    }
+
+    #cta h2,
+    #services h2,
+    #testimonials h2 {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 0.875rem;
+    }
+}
